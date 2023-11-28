@@ -1,4 +1,5 @@
 import { useState } from "react"
+import DesktopNav from "./DesktopNav";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -6,7 +7,7 @@ const Navbar = () => {
   return (
     <div className={`border-black border-2 flex justify-between transition-all duration-1000 ${open ? 'h-screen': 'h-15'} relative`}>
       <div className="logo p-5">
-       <p className="font-bold text-xl">DIGITAL AGENCY</p>
+       <p className="font-bold text-xl capitalize md:uppercase">digital agency</p>
       </div>
 
       {open && <div className="links absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
@@ -20,7 +21,9 @@ const Navbar = () => {
         </nav>
       </div>}
 
-      <div className="menu p-5">
+      <DesktopNav />
+
+      <div className="md:hidden menu p-5">
         <button onClick={() => setOpen(!open)}>
             {open ? (<svg
             xmlns="http://www.w3.org/2000/svg"
