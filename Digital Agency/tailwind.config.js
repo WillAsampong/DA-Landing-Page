@@ -6,7 +6,8 @@ export default {
     extend: {
       colors: {
         fontColor: '#272D38',
-        buttonColor: '#8EADD5'
+        buttonColor: '#8EADD5',
+        fontColor1: '#667085'
       },
     },
   },
