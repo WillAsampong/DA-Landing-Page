@@ -9,3 +9,7 @@ body {
     font-family: 'Inter', sans-serif;
     color: #272D38;
 }
+
+*{
+    outline: 1px solid grey;
+}

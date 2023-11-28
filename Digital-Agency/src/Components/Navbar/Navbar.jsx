@@ -5,8 +5,8 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
   return (
-    <div className={`border-black border-2 flex justify-between transition-all duration-1000 ${open ? 'h-screen': 'h-15'} relative`}>
-      <div className="logo p-5">
+    <div className={`flex justify-between items-center h-12 transition-all duration-1000 ${open ? 'h-screen': 'h-15'} relative`}>
+      <div className="logo">
        <p className="font-bold text-xl capitalize md:uppercase">digital agency</p>
       </div>
 
@@ -23,7 +23,7 @@ const Navbar = () => {
 
       <DesktopNav />
 
-      <div className="md:hidden menu p-5">
+      <div className="md:hidden menu">
         <button onClick={() => setOpen(!open)}>
             {open ? (<svg
             xmlns="http://www.w3.org/2000/svg"
