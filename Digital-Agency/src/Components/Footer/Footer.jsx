@@ -10,8 +10,8 @@ const Footer = () => {
                     <p className="">Building digital products,<br/> brands & experience</p>
                 </div>
                 <div className="footer-resources">
-                    <h5 className="text-lg font-bold text-center pb-8">Resources</h5>
-                    <ul className="flex flex-col justify-center md:justify-start md:text-left items-center gap-y-4">
+                    <h5 className="text-lg font-bold text-center mb-8 md:text-left">Resources</h5>
+                    <ul className="flex flex-col justify-center items-center md:items-start gap-y-4">
                         <li><a href="#">Guides</a></li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Customer Stories</a></li>
@@ -19,8 +19,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-company">
-                    <h5 className="text-lg font-bold text-center pb-8">Company</h5>
-                    <ul className="flex flex-col justify-center md:justify-start items-center gap-y-4">
+                    <h5 className="text-lg font-bold text-center mb-8 md:text-left">Company</h5>
+                    <ul className="flex flex-col justify-center items-center md:items-start gap-y-4">
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Patners</a></li>
@@ -28,8 +28,8 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-socials">
-                    <h5 className="text-lg font-bold text-center pb-8">Social Media</h5>
-                    <ul className="flex flex-col justify-center items-center gap-y-4">
+                    <h5 className="text-lg font-bold text-center mb-8 md:text-left">Social Media</h5>
+                    <ul className="flex flex-col justify-center items-center md:items-start  gap-y-4">
                         <li><a href="#">LinkedIn</a></li>
                         <li><a href="#">Instagram</a></li>
                         <li><a href="#">Facebook</a></li>

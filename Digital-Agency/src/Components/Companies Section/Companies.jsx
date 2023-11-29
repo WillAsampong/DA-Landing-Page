@@ -4,7 +4,7 @@ const Companies = () => {
   return (
     <div className="mt-10 mb-6 mx-auto container flex flex-col justify-center gap-y-6 ">
       <p className="flex justify-center text-fontColor1 capitalize">Trusted by 4000+ companies</p>
-      <div className="logo-container flex justify-center p-6 bg-[#F6F6F6] gap-x-8">
+      <div className="logo-container flex justify-center p-6 bg-[#F6F6F6] gap-x-12">
         <div className="spotify ">
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="24" viewBox="0 0 70 24" fill="none">
             <g clipPath="url(#clip0_23_598)">
