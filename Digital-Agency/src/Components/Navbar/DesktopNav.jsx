@@ -9,10 +9,10 @@ const DesktopNav = () => {
                   <Link to='/'>Home</Link>
                 </li>
                 <li className="text-xl hover:text-fontColor1">
-                  <Link to='/about'>About</Link>
+                  <Link>About</Link>
                 </li>
                 <li className="text-xl hover:text-fontColor1">
-                  <Link to='/testimonials'>Testimonials</Link>
+                  <Link>Testimonials</Link>
                 </li>
                 <li className="text-xl hover:text-fontColor1">
                   <Link to='/contact-form'>Contact</Link>
