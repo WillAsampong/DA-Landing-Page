@@ -66,7 +66,7 @@ const ContactForm = () => {
                         <textarea name="Message..." id="" cols="50" rows="5" className='border-b-2 w-full'></textarea>
                     </div>
                     <div className="submit ml-8 mt-4 mb-6">
-                        <button type="submit" className='p-4 bg-buttonColor text-white'>
+                        <button type="submit" className='px-4 py-3 bg-buttonColor text-white'>
                             Send Message
                         </button>
                     </div>
