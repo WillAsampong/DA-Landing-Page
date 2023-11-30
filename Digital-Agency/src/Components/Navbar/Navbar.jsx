@@ -15,7 +15,7 @@ const Navbar = () => {
         <nav>
             <ul className="flex flex-col gap-y-8">
                 <li className="text-4xl">
-                  <Link to='/'>Home</Link>
+                  <Link to='/' onClick={() => setOpen(false)}>Home</Link>
                 </li>
                 <li className="text-4xl">
                   <Link to='/about'>About</Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
                   <Link to='/testimonials'>Testimonials</Link>
                 </li>
                 <li className="text-4xl">
-                  <Link to='/contact-form'>Contact</Link>
+                  <Link to='/contact-form' onClick={() => setOpen(false)}>Contact</Link>
                 </li>
             </ul>
         </nav>
