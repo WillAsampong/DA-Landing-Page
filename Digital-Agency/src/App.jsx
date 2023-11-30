@@ -1,27 +1,20 @@
-import './App.css'
-import Branding from './Components/Branding Section/Branding'
-import Companies from './Components/Companies Section/Companies'
-import Contact from './Components/Contact Section/Contact'
-import Custome from './Components/Custome Section/Custome'
-import Footer from './Components/Footer/Footer'
-import Hero from './Components/Hero Section/Hero'
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Components/Main Page/Home';
+import ContactForm from './Components/Contact Form/ContactForm';
 import Navbar from './Components/Navbar/Navbar'
-import Testimonials from './Components/Testimonials Section/Testimonials'
+import Footer from './Components/Footer/Footer'
+
 
 function App() {
   return (
     <>
-      <div className='w-3/4 mx-auto'>
-        
-        <Navbar/>
-        <Hero />
-        <Companies />
-        <Branding />
-        <Custome />
-        <Testimonials />
-        <Contact />
-      </div>
-      <Footer />
+    <Navbar />
+      <Routes>
+        <Route path='/' Component={Home}></Route>
+        <Route path='/contact-form' Component={ContactForm}></Route>
+      </Routes>
+    <Footer />
     </>
   )
 }

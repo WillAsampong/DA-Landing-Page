@@ -1,6 +1,8 @@
 import customerSupportImg from '../../assets/customer-support.png';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <section className="mt-6 flex flex-col md:flex-row-reverse bg-[#F6F6F6]  rounded-2xl  mb-16 mx-auto md:justify-evenly">
@@ -12,7 +14,7 @@ const Contact = () => {
               <p className="text-center md:text-left">We work with Brans, Startups, to SMEs. Colaborate for more impact and growth</p>
           </div>
           <div className="contact flex justify-center md:justify-start">
-            <button className="uppercase bg-buttonColor p-2 text-white rounded-lg">Contact us</button>
+            <button className="uppercase bg-buttonColor p-2 text-white rounded-lg" onClick={() => navigate('contact-form')}>Contact us</button>
           </div>
         </div>
         <div className="contact-image hidden md:inline-block">

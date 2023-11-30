@@ -1,22 +1,31 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import DesktopNav from "./DesktopNav";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
   return (
-    <div className={`flex justify-between items-center h-12 transition-all duration-1000 ${open ? 'h-screen': 'h-15'} relative`}>
+    <div className={`flex justify-between ${open ? 'items-start': 'items-center'} h-12 transition-all duration-1000 ${open ? 'h-screen': 'h-15'} sticky w-3/4 mx-auto`}>
       <div className="logo">
-       <p className="font-bold text-xl capitalize md:uppercase">digital agency</p>
+       <p className="font-bold text-xl capitalize md:uppercase"><Link to='/'>digital agency</Link></p>
       </div>
 
       {open && <div className="links absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
         <nav>
             <ul className="flex flex-col gap-y-8">
-                <li className="text-4xl"><a href="#">Home</a></li>
-                <li className="text-4xl"><a href="#">About</a></li>
-                <li className="text-4xl"><a href="#">Testimonials</a></li>
-                <li className="text-4xl"><a href="#">Contact</a></li>
+                <li className="text-4xl">
+                  <Link to='/'>Home</Link>
+                </li>
+                <li className="text-4xl">
+                  <Link to='/about'>About</Link>
+                </li>
+                <li className="text-4xl">
+                  <Link to='/testimonials'>Testimonials</Link>
+                </li>
+                <li className="text-4xl">
+                  <Link to='/contact-form'>Contact</Link>
+                </li>
             </ul>
         </nav>
       </div>}
